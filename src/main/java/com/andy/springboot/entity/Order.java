@@ -35,11 +35,12 @@ public class Order implements Serializable {
         this.name = name;
     }
 
-    @Override
+    // TODO: 2019/8/24 0024 绝对不能重写toString方法，否则监听消息的时候无法序列化对象，报错
+    /*@Override
     public String toString() {
         return "Order{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 '}';
-    }
+    }*/
 }
